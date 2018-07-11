@@ -2,21 +2,13 @@
 
 *A mostly reasonable approach to JavaScript*
 
-> **Note**: this guide assumes you are using [Babel](https://babeljs.io), and requires that you use [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims) or the equivalent.
-
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb.svg)](https://www.npmjs.com/package/eslint-config-airbnb)
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb-base.svg)](https://www.npmjs.com/package/eslint-config-airbnb-base)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-This guide is available in other languages too. See [Translation](#translation)
 
 Other Style Guides
 
   - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
-  - [React](react/)
   - [CSS-in-JavaScript](css-in-javascript/)
   - [CSS & Sass](https://github.com/airbnb/css)
-  - [Ruby](https://github.com/airbnb/ruby)
+
 
 ## Table of Contents
 
@@ -1248,15 +1240,15 @@ Other Style Guides
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const Pier1StyleGuide = require('./Pier1StyleGuide');
+    module.exports = Pier1StyleGuide.es6;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import Pier1StyleGuide from './Pier1StyleGuide';
+    export default Pier1StyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './Pier1StyleGuide';
     export default es6;
     ```
 
@@ -1267,10 +1259,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as Pier1StyleGuide from './Pier1StyleGuide';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import Pier1StyleGuide from './Pier1StyleGuide';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1281,11 +1273,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './AirbnbStyleGuide';
+    export { es6 as default } from './Pier1StyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './Pier1StyleGuide';
     export default es6;
     ```
 
@@ -2481,14 +2473,14 @@ Other Style Guides
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './Pier1StyleGuide';
       // ...
     export default es6;
     ```
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './Pier1StyleGuide';
       // ...
     export default es6;↵
     ↵
@@ -2496,7 +2488,7 @@ Other Style Guides
 
     ```javascript
     // good
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './Pier1StyleGuide';
       // ...
     export default es6;↵
     ```
@@ -3245,12 +3237,12 @@ Other Style Guides
   - [23.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const AirbnbStyleGuide = {
+    const Pier1StyleGuide = {
       es6: {
       },
     };
 
-    export default AirbnbStyleGuide;
+    export default Pier1StyleGuide;
     ```
 
   <a name="naming--Acronyms-and-Initialisms"></a>
