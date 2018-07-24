@@ -1,7 +1,8 @@
 # Pier1 JavaScript Style Guide() {
 
 *A mostly reasonable approach to JavaScript*
-Forked from [Airbnb](https://github.com/airbnb/javascript).
+
+##### Forked from [Airbnb](https://github.com/airbnb/javascript).
 
 Other Style Guides
 
