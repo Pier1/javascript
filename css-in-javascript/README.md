@@ -1,6 +1,8 @@
-# Airbnb CSS-in-JavaScript Style Guide
+# Pier1 CSS-in-JavaScript Style Guide
 
 *A mostly reasonable approach to CSS-in-JavaScript*
+
+##### Forked from [Airbnb](https://github.com/airbnb/javascript).
 
 ## Table of Contents
 
