@@ -1,13 +1,13 @@
-# Airbnb JavaScript Style Guide() {
+# Pier1 JavaScript Style Guide() {
 
 *A mostly reasonable approach to JavaScript*
-
+Forked from [Airbnb](https://github.com/airbnb/javascript).
 
 Other Style Guides
 
   - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
   - [CSS-in-JavaScript](css-in-javascript/)
-  - [CSS & Sass](https://github.com/airbnb/css)
+  - [CSS & Sass](https://github.com/alvarezr/css)
 
 
 ## Table of Contents
