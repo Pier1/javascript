@@ -8,7 +8,7 @@ Other Style Guides
 
   - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
   - [CSS-in-JavaScript](css-in-javascript/)
-  - [CSS & Sass](https://github.com/alvarezr/css)
+  - [CSS & Sass](https://github.com/Pier1/css)
 
 
 ## Table of Contents
@@ -1286,16 +1286,16 @@ Other Style Guides
   - [10.4](#modules--no-duplicate-imports) Only import from a path in one place.
  eslint: [`no-duplicate-imports`](https://eslint.org/docs/rules/no-duplicate-imports)
     > Why? Having multiple lines that import from the same path can make code harder to maintain.
-
+    
     ```javascript
     // bad
     import foo from 'foo';
     // … some other imports … //
     import { named1, named2 } from 'foo';
-
+    
     // good
     import foo, { named1, named2 } from 'foo';
-
+    
     // good
     import foo, {
       named1,
@@ -1307,12 +1307,12 @@ Other Style Guides
   - [10.5](#modules--no-mutable-exports) Do not export mutable bindings.
  eslint: [`import/no-mutable-exports`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md)
     > Why? Mutation should be avoided in general, but in particular when exporting mutable bindings. While this technique may be needed for some special cases, in general, only constant references should be exported.
-
+    
     ```javascript
     // bad
     let foo = 3;
     export { foo };
-
+    
     // good
     const foo = 3;
     export { foo };
@@ -1322,11 +1322,11 @@ Other Style Guides
   - [10.6](#modules--prefer-default-export) In modules with a single export, prefer default export over named export.
  eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
     > Why? To encourage more files that only ever export one thing, which is better for readability and maintainability.
-
+    
     ```javascript
     // bad
     export function foo() {}
-
+    
     // good
     export default function foo() {}
     ```
@@ -1335,18 +1335,18 @@ Other Style Guides
   - [10.7](#modules--imports-first) Put all `import`s above non-import statements.
  eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)
     > Why? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
-
+    
     ```javascript
     // bad
     import foo from 'foo';
     foo.init();
-
+    
     import bar from 'bar';
-
+    
     // good
     import foo from 'foo';
     import bar from 'bar';
-
+    
     foo.init();
     ```
 
@@ -1373,12 +1373,12 @@ Other Style Guides
   - [10.9](#modules--no-webpack-loader-syntax) Disallow Webpack loader syntax in module import statements.
  eslint: [`import/no-webpack-loader-syntax`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md)
     > Why? Since using Webpack syntax in the imports couples the code to a module bundler. Prefer using the loader syntax in `webpack.config.js`.
-
+    
     ```javascript
     // bad
     import fooSass from 'css!sass!foo.scss';
     import barCss from 'style!css!bar.css';
-
+    
     // good
     import fooSass from 'foo.scss';
     import barCss from 'bar.css';
@@ -1533,7 +1533,7 @@ Other Style Guides
 
     const isJedi = getProp('jedi');
     ```
-  <a name="es2016-properties--exponentiation-operator"></a>
+    <a name="es2016-properties--exponentiation-operator"></a>
   - [12.3](#es2016-properties--exponentiation-operator) Use exponentiation operator `**` when calculating exponentiations. eslint: [`no-restricted-properties`](https://eslint.org/docs/rules/no-restricted-properties).
 
     ```javascript
@@ -1646,7 +1646,7 @@ Other Style Guides
       return name;
     }
     ```
-  <a name="variables--no-chain-assignment"></a><a name="13.5"></a>
+    <a name="variables--no-chain-assignment"></a><a name="13.5"></a>
   - [13.5](#variables--no-chain-assignment) Don’t chain variable assignments. eslint: [`no-multi-assign`](https://eslint.org/docs/rules/no-multi-assign)
 
     > Why? Chaining variable assignments creates implicit global variables.
@@ -2795,14 +2795,15 @@ Other Style Guides
     ```javascript
     // bad
     var x = 1;
+    ```
 
 
 
     var y = 2;
-
+    
     // good
     var x = 1;
-
+    
     var y = 2;
     ```
     <!-- markdownlint-enable MD012 -->
